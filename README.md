@@ -1,8 +1,10 @@
-# Module: worldclock
+# Module: MMM-Worldclock
 This module is derived from default MagicMirror module 'clock' and modified. Thanks to michaelteeuw.
 This module displays the current times of several locations.
+Modified fork of worldclock by eouia, renamed and improved. 
 
-![](https://github.com/eouia/worldclock/blob/master/world-clock.png?raw=true)
+![](https://github.com/bkeyport/MMM-Worldclock/blob/master/world-clock.png?raw=true)
+
 
 ## Installation
 
@@ -10,14 +12,14 @@ This module displays the current times of several locations.
 
 ```bash
 cd ~/MagicMirror/modules # navigate to module folder
-git clone https://github.com/eouia/worldclock # clone this repository
+git clone https://github.com/BKeyport/MMM-Worldclock # clone this repository
 ```
 
 2\. Then, add the following into the `modules` section of your `config/config.js` file:
 
 ````javascript
 {
-  module: 'worldclock',
+  module: 'MMM-Worldclock',
   position: 'top_left', // This can be any of the regions, best results in top_left or top_right regions
   config: {
     // See 'Configuration options' for more information.
@@ -75,6 +77,8 @@ Every clock has 'world-[seq.]' as it's classname. So you can modify color of spe
 And if you set the `style` value in configuration, the classname 'style-[style config value]' will be assigned to top level container block. (eg. `style-top`)
 
 ## Updated
+* 2020-08-06 
+   * BKeyport Fixed timeFormat per clock to work properly. 
 * 2019-02-24
   * `offsetTimezone` is added.
 * 2017-08-25
