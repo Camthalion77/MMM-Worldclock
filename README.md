@@ -1,7 +1,7 @@
 # Module: MMM-Worldclock
-This module is derived from default MagicMirror module 'clock' and modified. Thanks to michaelteeuw.
-This module displays the current times of several locations.
-Modified fork of worldclock by eouia, renamed and improved. 
+This module is derived from default MagicMirror module 'clock' and modified. Thanks to michaelteeuw.<br>
+This module displays times from around the world. <br>
+Modified fork of worldclock by eouia, renamed and improved.<br>
 
 ![](https://github.com/bkeyport/MMM-Worldclock/blob/master/world-clock.png?raw=true)
 
