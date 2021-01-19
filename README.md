@@ -65,9 +65,9 @@ The following properties can be configured:
 | ----------------- | -----------
 | `title`           | The clock title of each timezone. if it is omitted or null, the `timezone` value will be displayed instead. <br><br> **Example:** `My Home`, `The Golden Gate`, `Hong Kong Office` or `null`  
 | `timezone`        | Specify a timezone to show current local time. <br><br> **Possible examples values:** `America/New_York`, `Europe/Berlin`, `Etc/GMT+10` <br>See more informations about configuration value [here](https://momentjs.com/timezone/docs/#/data-formats/packed-format/)<br> **Default value:** `null`<br> If this value is null or omitted, current local timezone value (defined in config.js) will be used. I don't recommend it because the purpose of this module is showing another local time.<br>All available timzone codes are [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-|`flag `  |  [ISO 3166-1-alpha-2 code](https://www.iso.org/obp/ui/#search/code/) for country. |
+|`flag `  |  [ISO 3166-1-alpha-2 code](https://www.iso.org/obp/ui/#search/code/) for country. DO NOT use with altflag below |
+|`altflag `  |  name of alternative flag file. MUST Be square image, MUST be self centered. DO NOT use with flag above. Place in module's root directory. |
 |`timeFormat`|Override module  timeFormat configuration for this clock. For possible values see timeFormat above.|
-
 
 ## Style Customizing
 I Prefer modifying looks by CSS.<br>
@@ -77,18 +77,19 @@ Every clock has 'world-[seq.]' as it's classname. So you can modify color of spe
 And if you set the `style` value in configuration, the classname 'style-[style config value]' will be assigned to top level container block. (eg. `style-top`)
 
 ## Updated
+* 2021-01-18 
+    * BKeyport: Added initial altflag operation. Will allow user to add a flag of their choice. Is not working fully yet, I need to learn and build my own css tree for it to make it seamless with other flag system. As of present, icons are slightly larger than wanted, and may interrupt other operation. Suggestions welcome. 
 * 2020-08-06 
-   * BKeyport Fixed timeFormat per clock to work properly. 
+   * BKeyport: Fixed timeFormat per clock to work properly. 
 * 2019-02-24
-  * `offsetTimezone` is added.
+  * eouia: `offsetTimezone` is added.
 * 2017-08-25
-  * supports `MMM-TelegramBot` (https://github.com/eouia/MMM-TelegramBot)
-  * command `/worldclock` is added
+  * eouia: supports `MMM-TelegramBot` (https://github.com/eouia/MMM-TelegramBot)
+  * eouia:  command `/worldclock` is added
 * 2017-08-10
-  * Country flags are supported.
-  * HTML/CSS Structures are refined.
+  * eouia: Country flags are supported.
+  * eouia: HTML/CSS Structures are refined.
 
+Thanks to everyone.
 
-Thanks for everyone.
-
-@eouia
+@eouia/@bkeyport

@@ -153,7 +153,18 @@ Module.register("MMM-Worldclock",{
       mainWrapper.appendChild(flagWrapper)
     }
 
-
+if (c.altflag) {
+      var flagWrapper = document.createElement("div")
+      flagWrapper.className = "flag"
+      var flagIconWrapper = document.createElement("span")
+      flagIconWrapper.className = "altflag-icon"
+      var flagimg = document.createElement('img')
+      flagimg.src = "modules/MMM-Worldclock/" + c.altflag
+      flagimg.className = "flag-icon"
+      flagIconWrapper.appendChild(flagimg)
+      flagWrapper.appendChild(flagIconWrapper)
+      mainWrapper.appendChild(flagWrapper)
+    }
 
     mainWrapper.appendChild(timeWrapper)
 

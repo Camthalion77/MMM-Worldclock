@@ -11,12 +11,13 @@ Module.register("worldclock",{
     style: 'left', //where the time could be located; 'top', 'left','right','bottom'
     offsetTimezone: null, // or "Europe/Berlin" to get difference from this timezone to each clock.
     clocks: [
-      {
-        title: "Seoul",
-        timezone:"Asia/Seoul",
-        flag:"kr",
-      },
-    ]
+		{
+			title: "UTC",
+			timezone: "UTC",
+			timeFormat: "HH:mm:ss",
+			// utcFlag: true, (Not implemented, yet) 
+		},
+	]
   },
   // Define required scripts.
   getScripts: function() {
@@ -149,9 +150,18 @@ Module.register("worldclock",{
       flagWrapper.appendChild(flagIconWrapper)
       mainWrapper.appendChild(flagWrapper)
     }
-
-
-
+    
+/*
+    if (c.utcFlag) {
+      var flagWrapper = document.createElement("div")
+      flagWrapper.className = "flag"
+      var flagIconWrapper = document.createElement("span")
+      flagIconWrapper.className = "flag-icon flag-icon-squared"
+      flagIconWrapper.className += " flag-icon-" + c.flag
+      flagWrapper.appendChild(flagIconWrapper)
+      mainWrapper.appendChild(flagWrapper)
+    }
+*/
     mainWrapper.appendChild(timeWrapper)
 
     worldWrapper.appendChild(mainWrapper)

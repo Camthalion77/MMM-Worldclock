@@ -46,6 +46,14 @@
   box-shadow:0 0 3px #FFF;
 }
 
+.MMM-Worldclock .altflag-icon {
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 100;
+  height: 1em;
+  width: 1em;
+}
+
 
 
 
@@ -179,6 +187,12 @@
 }
 
 .MMM-Worldclock .style-right .main .flag {
+  order:1;
+  margin-right :10px;
+}
+
+
+.MMM-Worldclock .style-right .main .altflag {
   order:1;
   margin-right :10px;
 }
