@@ -87,10 +87,11 @@ Modifying the overall style is accomplished by adjusting the classname 'style-' 
 'style-top' 'style-bottom' 'style-left' and 'style-right' respectively. 
 
 ## Updated
-* 2021-01-19 
+* 2021-06-06
 	* BKeyport: Adjusted defaults to match documentation. 
 	* BKeyport: Adjusted defaults for MMM-Config use. 
 	* BKeyport: Continue rewrite of documentation for clarity. 
+	* Altflag now is _about_ the same size as regular flags. 
 
 * 2021-01-18 
 	* BKeyport: Added initial altflag operation. Will allow user to add a flag of their choice. Is not working fully yet, I need to learn and build my own css tree for it to make it seamless with other flag system. As of present, icons are slightly larger than wanted, and may interrupt other operation. Suggestions welcome. 
