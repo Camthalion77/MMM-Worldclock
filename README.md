@@ -72,25 +72,38 @@ The following properties can be configured:
 |`timeFormat`|Override module  timeFormat configuration for this clock. For possible values see timeFormat above.|
 
 ## Style Customizing
-I Prefer modifying looks by CSS.<br>
+Look and feel of the module is handled by CSS.<br>
 
-Every clock has 'world-[seq.]' as it's classname. So you can modify color of specific clock(eg. 'world-1' means second clock)
+Please make all changes in MagicMirror/css/custom.css (If you haven't made any changes to CSS, it may not exist) 
 
-And if you set the `style` value in configuration, the classname 'style-[style config value]' will be assigned to top level container block. (eg. `style-top`)
+Each clock is in it's own class. The class is defined as 'world-' with the sequence number, starting at zero. 
+
+First clock is 'world-0' ("home") in default code
+Second is 'world-1' ("Hollywood") in default code
+and so on. 
+
+Modifying the overall style is accomplished by adjusting the classname 'style-' and the value of your style config. 
+
+'style-top' 'style-bottom' 'style-left' and 'style-right' respectively. 
 
 ## Updated
+* 2021-01-19 
+	* BKeyport: Adjusted defaults to match documentation. 
+	* BKeyport: Adjusted defaults for MMM-Config use. 
+	* BKeyport: Continue rewrite of documentation for clarity. 
+
 * 2021-01-18 
-    * BKeyport: Added initial altflag operation. Will allow user to add a flag of their choice. Is not working fully yet, I need to learn and build my own css tree for it to make it seamless with other flag system. As of present, icons are slightly larger than wanted, and may interrupt other operation. Suggestions welcome. 
+	* BKeyport: Added initial altflag operation. Will allow user to add a flag of their choice. Is not working fully yet, I need to learn and build my own css tree for it to make it seamless with other flag system. As of present, icons are slightly larger than wanted, and may interrupt other operation. Suggestions welcome. 
 * 2020-08-06 
-   * BKeyport: Fixed timeFormat per clock to work properly. 
+	* BKeyport: Fixed timeFormat per clock to work properly. 
 * 2019-02-24
-  * eouia: `offsetTimezone` is added.
+	* eouia: `offsetTimezone` is added.
 * 2017-08-25
-  * eouia: supports `MMM-TelegramBot` (https://github.com/eouia/MMM-TelegramBot)
-  * eouia:  command `/worldclock` is added
+	* eouia: supports `MMM-TelegramBot` (https://github.com/eouia/MMM-TelegramBot)
+	* eouia:  command `/worldclock` is added
 * 2017-08-10
-  * eouia: Country flags are supported.
-  * eouia: HTML/CSS Structures are refined.
+	* eouia: Country flags are supported.
+	* eouia: HTML/CSS Structures are refined.
 
 Thanks to everyone.
 

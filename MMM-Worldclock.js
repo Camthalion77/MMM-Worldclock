@@ -9,17 +9,30 @@
 Module.register("MMM-Worldclock",{
   // Module config defaults.
   defaults: {
-    timeFormat: 'LT', //defined in moment.js format()
-    style: 'left', //where the time could be located; 'top', 'left','right','bottom'
-    offsetTimezone: null, // or "Europe/Berlin" to get difference from this timezone to each clock.
-    clocks: [
-      {
-        title: "Seoul",
-        timezone:"Asia/Seoul",
-        flag:"kr",
-      },
-    ]
-  },
+		timeFormat: 'hh:mm A', //Global time format, as defined in moment.js format()
+		style: 'top', // Which way do you want the flag and description from the clock? choices are 'top', 'left','right','bottom'
+		offsetTimezone: null, // Timezone you want to show the difference from. Default isUTC.
+		clocks: [
+			{
+				title: "Home",
+			},
+			{
+				title: "HOLLYWOOD", // Too long of a title could cause bad text align.
+				timezone: "America/Los_Angeles", //When omitted, Local time will be displayed. 
+				flag: "us", // If you'd like a flag from the standard library 
+			},
+			{
+				timezone: "Asia/Seoul",
+			},
+			{
+				title: "UTC",
+				timezone: "UTC",
+				timeFormat: "HH:mm MM/DD", // Time format override. 
+				altflag: "world.png" // if you'd like a flag from a file on your mirror device. 
+			},
+		]
+	},
+
   // Define required scripts.
   getScripts: function() {
     return ["moment.js", "moment-timezone.js"]
