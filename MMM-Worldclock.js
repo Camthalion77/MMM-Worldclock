@@ -160,7 +160,7 @@ if (c.altflag) {
       flagIconWrapper.className = "altflag-icon"
       var flagimg = document.createElement('img')
       flagimg.src = "modules/MMM-Worldclock/" + c.altflag
-      flagimg.className = "flag-icon"
+      flagimg.className = "altflag-icon"
       flagIconWrapper.appendChild(flagimg)
       flagWrapper.appendChild(flagIconWrapper)
       mainWrapper.appendChild(flagWrapper)

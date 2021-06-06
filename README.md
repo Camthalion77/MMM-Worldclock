@@ -5,7 +5,6 @@ Modified fork of worldclock by eouia, renamed and improved.<br>
 
 ![](https://github.com/bkeyport/MMM-Worldclock/blob/master/world-clock.png?raw=true)
 
-
 ## Installation
 
 1\. Execute the following commands to install the module:
@@ -19,33 +18,36 @@ git clone https://github.com/BKeyport/MMM-Worldclock # clone this repository
 
 ````javascript
 {
-  module: 'MMM-Worldclock',
-  position: 'top_left', // This can be any of the regions, best results in top_left or top_right regions
-  config: {
-    // See 'Configuration options' for more information.
-
-    timeFormat: 'hh:mm A', //defined in moment.js format()
-    style: 'top', //predefined 4 styles; 'top', 'left','right','bottom'
-    offsetTimezone: null, // Or you can set `Europe/Berlin` to get timegap difference from this timezone. `null` will be UTC timegap.
-    clocks: [
-      {
-        title: "Home",
-      },
-      {
-        title: "HOLLYWOOD", // Too long title could cause ugly text align.
-        timezone: "America/Los_Angeles", //When omitted, Localtime will be displayed. It might be not your purporse, I bet.
-        flag: "us",
-      },
-      {
-        timezone: "Asia/Seoul",
-      },
-    ]
-  }
+	module: 'MMM-Worldclock',
+	position: 'top_left', // This can be any of the regions, best in top_left or top_right regions
+	config: {
+	// See 'Configuration options' for more information.
+		timeFormat: 'hh:mm A', //Global time format, as defined in moment.js format()
+		style: 'top', // Which way do you want the flag and description from the clock? choices are 'top', 'left','right','bottom'
+		offsetTimezone: null, // Timezone you want to show the difference from. null, "", or omitted from config will be UTC.
+		clocks: [
+			{
+				title: "Home",
+			},
+			{
+				title: "HOLLYWOOD", // Too long of a title could cause bad text align.
+				timezone: "America/Los_Angeles", //When omitted, Local time will be displayed. 
+				flag: "us", // If you'd like a flag from the standard library 
+			},
+			{
+				timezone: "Asia/Seoul",
+			},
+			{
+				title: "UTC",
+				timezone: "UTC",
+				timeFormat: "HH:mm MM/DD", // Time format override. 
+				altflag: "world.png" // if you'd like a flag from a file on your mirror device. 
+			},
+		]
+	},
 },
 ````
-Of course, you should change the configuration values for your purpose.
-
-
+3\. Change the options to your desired method. 
 
 ## Configuration options
 
