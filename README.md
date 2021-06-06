@@ -78,9 +78,9 @@ Please make all changes in MagicMirror/css/custom.css (If you haven't made any c
 
 Each clock is in it's own class. The class is defined as 'world-' with the sequence number, starting at zero. 
 
-First clock is 'world-0' ("home") in default code
-Second is 'world-1' ("Hollywood") in default code
-and so on. 
+First clock is 'world-0' ("home") in default code<br>
+Second is 'world-1' ("Hollywood") in default code<br>
+and so on. <br>
 
 Modifying the overall style is accomplished by adjusting the classname 'style-' and the value of your style config. 
 
