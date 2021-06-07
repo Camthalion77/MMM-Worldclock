@@ -71,6 +71,10 @@ The following properties can be configured:
 |`altflag `  |  name of alternative flag file. MUST Be square image, MUST be self centered. DO NOT use with flag above. Place in module's root directory. |
 |`timeFormat`|Override module  timeFormat configuration for this clock. For possible values see timeFormat above.|
 
+If you happen to use `flag` and `altflag` together you'll get both on the same clock, This is clearly not desired. <br> 
+
+Altflag images should have no whitespace around the edge for most advantagous look. It will be slightly smaller than the flag image. I'm not sure why this is, yet.<br>
+
 ## Style Customizing
 Look and feel of the module is handled by CSS.<br>
 

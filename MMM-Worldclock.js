@@ -3,8 +3,8 @@
 * Module: worldlock
 *
 * Originally by eouia
-* Modifications by bkeyport 
-* 
+* Modifications by bkeyport
+*
 */
 Module.register("MMM-Worldclock",{
   // Module config defaults.
