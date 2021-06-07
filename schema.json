@@ -88,14 +88,16 @@
   "form": [
     {
       "key": "MMM-Worldclock.disabled",
-      "htmlClass": "disabled_checkbox"
+      "htmlClass": "disabled_checkbox",
+      "description": "when checked the module will not be used by MagicMirror<br> but will remain in config.js if already present"
     },
     {
       "key": "MMM-Worldclock.position",
       "description": "use Module Positions section below to set or change"
     },
     {
-      "key": "MMM-Worldclock.classes"
+      "key": "MMM-Worldclock.classes",
+      "description": "css classes to use for this module, beyond what MagicMirror uses"
     },
     {
       "key": "MMM-Worldclock.order",
@@ -115,15 +117,18 @@
       "items": [
         {
           "title": "timeFormat",
-          "key": "MMM-Worldclock.config.timeFormat"
+          "key": "MMM-Worldclock.config.timeFormat",
+          "description": "The overall time format for the module. This is the default for the clocks below"
         },
         {
           "title": "style",
-          "key": "MMM-Worldclock.config.style"
+          "key": "MMM-Worldclock.config.style",
+          "description": "How do you want the flag and title to be shown in relation to the clock" 
         },
         {
           "title": "offsetTimezone",
-          "key": "MMM-Worldclock.config.offsetTimezone"
+          "key": "MMM-Worldclock.config.offsetTimezone",
+          "description": "If you'd like to display the clock's difference (offset) from another timezone"
         },
         {
           "type": "array",
@@ -134,23 +139,28 @@
             "items": [
               {
                 "title": "title",
-                "key": "MMM-Worldclock.config.clocks[].title"
+                "key": "MMM-Worldclock.config.clocks[].title",
+                "description": "The title of the clock, defaults to the timezone" 
               },
               {
                 "title": "timezone",
-                "key": "MMM-Worldclock.config.clocks[].timezone"
+                "key": "MMM-Worldclock.config.clocks[].timezone",
+                "description": "Timezone of the clock, see readme.md for formatting" 
               },
               {
                 "title": "flag",
-                "key": "MMM-Worldclock.config.clocks[].flag"
+                "key": "MMM-Worldclock.config.clocks[].flag",
+                "description": "the ISO 3166-1 Alpha-2 code for a country" 
               },
               {
                 "title": "altflag",
-                "key": "MMM-Worldclock.config.clocks[].altflag"
+                "key": "MMM-Worldclock.config.clocks[].altflag",
+                "description": "filename of alternative flag, placed in module root"              
               },
               {
                 "title": "timeFormat",
-                "key": "MMM-Worldclock.config.clocks[].timeFormat"
+                "key": "MMM-Worldclock.config.clocks[].timeFormat",
+                "description": "Override time format, so you don't have to have the same format for each clock" 
               }
             ]
           }
@@ -169,23 +179,6 @@
       "style": "top",
       "offsetTimezone": null,
       "clocks": [
-        {
-          "title": "Home"
-        },
-        {
-          "title": "HOLLYWOOD",
-          "timezone": "America/Los_Angeles",
-          "flag": "us"
-        },
-        {
-          "timezone": "Asia/Seoul"
-        },
-        {
-          "title": "UTC",
-          "timezone": "UTC",
-          "timeFormat": "HH:mm MM/DD",
-          "altflag": "world.png"
-        }
       ]
     }
   }

@@ -90,17 +90,23 @@ Modifying the overall style is accomplished by adjusting the classname 'style-' 
 
 'style-top' 'style-bottom' 'style-left' and 'style-right' respectively. 
 
-## Updated
+## Updates
+* 2021-06-07
+	* Update schema.json for various bug fixes and MMM-Config, Update README. 
+
 * 2021-06-06
-	* BKeyport: Adjusted defaults to match documentation. 
-	* BKeyport: Adjusted defaults for MMM-Config use. 
-	* BKeyport: Continue rewrite of documentation for clarity. 
+	* Adjusted defaults to match documentation. 
+	* Adjusted defaults for MMM-Config use. ** Note: double check your fields carefully, some may revert to default, working on bugfix **
+	* Continue rewrite of documentation for clarity. 
 	* Altflag now is _about_ the same size as regular flags. 
 
 * 2021-01-18 
-	* BKeyport: Added initial altflag operation. Will allow user to add a flag of their choice. Is not working fully yet, I need to learn and build my own css tree for it to make it seamless with other flag system. As of present, icons are slightly larger than wanted, and may interrupt other operation. Suggestions welcome. 
+	* Added initial altflag operation. Will allow user to add a flag of their choice. Is not working fully yet, I need to learn and build my own css tree for it to make it seamless with other flag system. As of present, icons are slightly larger than wanted, and may interrupt other operation. Suggestions welcome. 
 * 2020-08-06 
-	* BKeyport: Fixed timeFormat per clock to work properly. 
+	* Fixed timeFormat per clock to work properly. 
+
+Updates after 2020-08-01 is BKeyport
+
 * 2019-02-24
 	* eouia: `offsetTimezone` is added.
 * 2017-08-25
@@ -110,6 +116,6 @@ Modifying the overall style is accomplished by adjusting the classname 'style-' 
 	* eouia: Country flags are supported.
 	* eouia: HTML/CSS Structures are refined.
 
-Thanks to everyone.
+Thank YOU for your support.
 
 @eouia/@bkeyport
