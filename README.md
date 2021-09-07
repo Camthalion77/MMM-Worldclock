@@ -3,7 +3,7 @@ This module is derived from default MagicMirror module 'clock' and modified. Tha
 This module displays times from around the world. <br>
 Modified fork of worldclock by eouia, renamed and improved.<br>
 
-*** Notice: This module is abandoned at this time. If moment is dropped from MagicMirror, it will not function, and due to incomplete/poor documentation, I will not continue supporting it. ***
+*** Due to the end of life for required modules, this module may break in future versions of MagicMirror. I am working on a solution. *** 
 
 ![](https://github.com/bkeyport/MMM-Worldclock/blob/master/world-clock.png?raw=true)
 
