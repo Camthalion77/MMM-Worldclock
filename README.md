@@ -1,3 +1,5 @@
+### NOTE: THIS MODULE IS TO BE HOSTED ONLY AT https://github.com/BKeyport/MMM-Worldclock - Any other hosting location is invalid.
+
 # Module: MMM-Worldclock
 This module is derived from default MagicMirror module 'clock' and modified. Thanks to michaelteeuw.<br>
 This module displays times from around the world. <br>
