@@ -1,4 +1,5 @@
 ### NOTE: THIS MODULE IS TO BE HOSTED ONLY AT https://github.com/BKeyport/MMM-Worldclock - Any other hosting location is invalid.
+If you fork this file (you don't need to if you're just using it) please update me with any changes you make, so if it's useful to everyone, it can be added!
 
 # Module: MMM-Worldclock
 This module is derived from default MagicMirror module 'clock' and modified. Thanks to michaelteeuw.<br>
