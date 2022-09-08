@@ -11,7 +11,7 @@
 .MMM-Worldclock .time {
   display:block;
   height:100%;
-  color:#FFF;
+  color:var(--color-text);
 }
 
 .MMM-Worldclock .flag {
@@ -31,14 +31,14 @@
 .MMM-Worldclock .gap {
   padding:0;
   margin:0;
-  color: #999;
+  color:var(--color-text-dimmed);
 }
 
 .MMM-Worldclock .zone {
   display:block;
   padding:0;
   margin:0;
-  color:#DDD;
+  color:var(--color-text-dimmed);
 }
 
 .MMM-Worldclock .flag-icon {
@@ -53,9 +53,6 @@
   height: 1em;
   width: 1em;
 }
-
-
-
 
 /* style : top */
 .MMM-Worldclock .style-top .world {

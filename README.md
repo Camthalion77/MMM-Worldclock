@@ -1,6 +1,12 @@
 ### NOTE: THIS MODULE IS TO BE HOSTED ONLY AT https://github.com/BKeyport/MMM-Worldclock - Any other hosting location is invalid.
 If you fork this file (you don't need to if you're just using it) please update me with any changes you make, so if it's useful to everyone, it can be added!
 
+If you find this module useful, and would like to contribute to the project, I appreciate the thought. Instead of giving to me, please donate to L'Arche Tahoma Hope
+at https://www.larchetahomahope.org/donate/ - in honor of Nancy Tyson. (Dedicate my donation checkbox). Nancy means the world to me. You don't have to notify me you
+have done so. 
+
+THANK YOU for your consideration. 
+
 # Module: MMM-Worldclock
 This module is derived from default MagicMirror module 'clock' and modified. Thanks to michaelteeuw.<br>
 This module displays times from around the world. <br>
@@ -96,6 +102,10 @@ Modifying the overall style is accomplished by adjusting the classname 'style-' 
 'style-top' 'style-bottom' 'style-left' and 'style-right' respectively. 
 
 ## Updates
+* 2022-09-07 
+	* starting updates for eliminating moment.js 
+	* update css to use global colors by default using varibles. 
+
 * 2021-06-07
 	* Update schema.json for various bug fixes and MMM-Config, Update README. 
 
