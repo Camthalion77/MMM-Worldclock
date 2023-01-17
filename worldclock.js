@@ -15,7 +15,7 @@ Module.register("worldclock",{
 			title: "UTC",
 			timezone: "UTC",
 			timeFormat: "HH:mm:ss",
-			// utcFlag: true, (Not implemented, yet) 
+			// utcFlag: true, (Not implemented, yet)
 		},
 	]
   },
@@ -150,7 +150,7 @@ Module.register("worldclock",{
       flagWrapper.appendChild(flagIconWrapper)
       mainWrapper.appendChild(flagWrapper)
     }
-    
+
 /*
     if (c.utcFlag) {
       var flagWrapper = document.createElement("div")

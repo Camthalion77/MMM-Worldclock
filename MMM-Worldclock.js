@@ -18,8 +18,8 @@ Module.register("MMM-Worldclock",{
 			},
 			{
 				title: "HOLLYWOOD", // Too long of a title could cause bad text align.
-				timezone: "America/Los_Angeles", //When omitted, Local time will be displayed. 
-				flag: "us", // If you'd like a flag from the standard library 
+				timezone: "America/Los_Angeles", //When omitted, Local time will be displayed.
+				flag: "us", // If you'd like a flag from the standard library
 			},
 			{
 				timezone: "Asia/Seoul",
@@ -27,8 +27,8 @@ Module.register("MMM-Worldclock",{
 			{
 				title: "UTC",
 				timezone: "UTC",
-				timeFormat: "HH:mm MM/DD", // Time format override. 
-				altflag: "world.png" // if you'd like a flag from a file on your mirror device. 
+				timeFormat: "HH:mm MM/DD", // Time format override.
+				altflag: "world.png" // if you'd like a flag from a file on your mirror device.
 			},
 		]
 	},
@@ -98,7 +98,7 @@ Module.register("MMM-Worldclock",{
     }
 
    var timeString
-    
+
     if (c.timeFormat == null || undefined ) {
       timeString = clock.format(this.config.timeFormat)
     } else {
@@ -144,7 +144,7 @@ Module.register("MMM-Worldclock",{
       var dur = moment.duration(os, 'minutes')
       gap = ori + moment.utc(dur.asMilliseconds()).format('HH:mm')
     } else {
-      gap = "UTC " + clock.format('Z')
+    //  gap = "UTC " + clock.format('Z')
     }
 
     gapWrapper.innerHTML = gap
